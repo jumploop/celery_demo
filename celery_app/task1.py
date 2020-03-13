@@ -11,4 +11,5 @@ from celery_app import app
 @app.task
 def send_message(msg):
     sleep(5)  # 模拟耗时操作
+    print(msg)
     return "message send ok"
